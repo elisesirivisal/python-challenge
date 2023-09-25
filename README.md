@@ -6,13 +6,13 @@ README.md
 PyBank  
 &emsp;main.py  
 &emsp;Analysis  
-&emsp;&emsp;analysis.txt  
+&emsp;&emsp;&emsp;analysis.txt  
 &emsp;Resources  
-&emsp;&emsp;budget_data.csv  
+&emsp;&emsp;&emsp;budget_data.csv  
 
 PyPoll  
 &emsp;main.py  
 &emsp;Analysis  
-&emsp;&emsp;analysis.txt  
+&emsp;&emsp;&emsp;analysis.txt  
 &emsp;Resources  
-&emsp;&emsp;election_data.csv
+&emsp;&emsp;&emsp;election_data.csv
