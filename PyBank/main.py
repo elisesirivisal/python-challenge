@@ -21,6 +21,8 @@ with open(budget_csv) as file:
     row = next(csv_reader)
     date = row[0]
     profit_loss = int(row[1])
+    total_dollar += profit_loss
+    total_months += 1
 
     for row in csv_reader:
         # calculate change in profit_loss between months (this month - last month)
@@ -33,14 +35,14 @@ with open(budget_csv) as file:
         total_dollar += int(profit_loss)
         
         # find max INCREASE
-        if max_increase[1] < change_vals[total_months - 1]:
+        if max_increase[1] < change_vals[total_months - 2]:
             max_increase[0] = row[0]
-            max_increase[1] = change_vals[total_months - 1]
+            max_increase[1] = change_vals[total_months - 2]
 
         # find max DECREASE
-        if max_decrease[1] > change_vals[total_months - 1]:
+        if max_decrease[1] > change_vals[total_months - 2]:
             max_decrease[0] = row[0]
-            max_decrease[1] = change_vals[total_months - 1]
+            max_decrease[1] = change_vals[total_months - 2]
 
 # calculate the average change in profit/loss over the entire period
 avg_change = round(sum(change_vals)/total_months, 2)
