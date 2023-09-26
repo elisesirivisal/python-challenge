@@ -50,16 +50,4 @@ with open("PyPoll/Analysis/analysis.txt", "w") as f:
 with open("PyPoll/Analysis/analysis.txt", "r") as f:
     # Reads Election Results that was written in analysis.txt
     print(f.read())
-
-# # Testing Code
-# # Print results before I write a new file and create like 100 of the same folder
-# print(f"Election Results \n")
-# print(f"-------------------------\n")
-# print(f"Total Votes: {total_votes}\n")
-# print(f"-------------------------\n")
-# print(f"Charles Casper Stockham: {round((charles_votes/total_votes)*100, 3)}% ({charles_votes})\n")
-# print(f"Diana DeGette: {round((diana_votes/total_votes)*100, 3)}% ({diana_votes})\n")
-# print(f"Raymon Anthony Doane: {round((raymon_votes/total_votes)*100, 3)}% ({raymon_votes})\n")
-# print(f"-------------------------\n")
-# print(f"Winner: {winner}\n")
 # print(f"-------------------------")
