@@ -62,13 +62,3 @@ with open("PyBank/Analysis/analysis.txt", "w") as f:
 with open("PyBank/Analysis/analysis.txt", "r") as f:
     # Reads Financial Analysis that was written in analysis.txt
     print(f.read())
-
-# # Testing Code
-# # Print results before I write a new file and create like 100 of the same folder
-# print("Financial Analysis\n")
-# print("----------------------------\n")
-# print("Total Months: " + str(total_months) + "\n")
-# print("Total: $" + str(total_dollar) + "\n")
-# print("Average Change: $" + str(avg_change) + "\n")
-# print("Greatest Increase in Profits: " + str(max_increase[0]) + " ($" + str(max_increase[1]) + ")\n")
-# print("Greatest Decrease in Profits: " + str(max_decrease[0]) + " ($" + str(max_decrease[1]) + ")\n")
